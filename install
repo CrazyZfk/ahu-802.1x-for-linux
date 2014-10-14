@@ -1,0 +1,4 @@
+#/bin/bash
+
+gcc -o my802.1x main.c ath.c packet.c md5.c md5.h
+
