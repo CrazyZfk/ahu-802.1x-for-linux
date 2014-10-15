@@ -1,3 +1,7 @@
+/*
+version:0.1
+athor:zfk
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<errno.h>
