@@ -203,7 +203,7 @@ void sig_inter(int signo) {
 	build_startp();
 	p_hdr[15]=0x02;
 	if(sendto(sockfd,p_hdr,18,0,(struct sockaddr *)&toaddr,sizeof(toaddr))<0) {
-		perror("logoff passwd wrong\n");
+		perror("logoff wrong\n");
 		exit(1);
 	}
 	puts("logoff succeed");
