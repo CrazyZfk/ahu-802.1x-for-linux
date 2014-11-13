@@ -146,7 +146,7 @@ void startup() {
 				perror("upload name wrong\n");
 				exit(1);
 			}
-			else if(stat==1) sig_inter(stat);
+			else if(stat==1) raise(SIGINT);
 		}
 		putchar(10);
 		putchar(10);
@@ -188,7 +188,7 @@ void upinfo() {
 			case -1:
 			default:
 				perror("selcet");
-				if(stat==1) sig_inter(stat);
+				if(stat==1) raise(SIGINT);
 		}
 		timeout.tv_sec=75;
 		timeout.tv_usec=0;
